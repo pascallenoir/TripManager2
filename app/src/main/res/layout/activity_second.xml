@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+
+    <ImageView
+        android:id="@+id/fond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/newfondd"
+        android:scaleType="centerCrop"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Identité"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Veuillez vous identifier "
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+                    <AutoCompleteTextView
+                    android:id="@+id/nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Nom"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableStart="@drawable/nom"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                            <AutoCompleteTextView
+                                android:id="@+id/prenom"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:hint="Prénoms"
+                                android:background="@drawable/rounded_white"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:drawableStart="@drawable/prenom"
+                                android:paddingStart="10dp"
+                                android:layout_marginBottom="10dp"/>
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/adresse"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:hint="Adresse"
+                                    android:background="@drawable/rounded_white"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:drawableStart="@drawable/adresse"
+                                    android:paddingStart="10dp"
+                                    android:layout_marginBottom="10dp"/>
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:hint="Date"
+                                        android:background="@drawable/rounded_white"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:drawableStart="@drawable/datee"
+                                        android:paddingStart="10dp"
+                                        android:layout_marginBottom="10dp"/>
+
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/telephone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:hint="Téléphone"
+                                        android:background="@drawable/rounded_white"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:drawableStart="@drawable/telephone"
+                                        android:paddingStart="10dp"
+                                        android:layout_marginBottom="10dp"/>
+
+                                    <AutoCompleteTextView
+                                                android:id="@+id/email"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:hint="Email"
+                                                android:background="@drawable/rounded_white"
+                                                android:layout_marginStart="15dp"
+                                                android:layout_marginEnd="15dp"
+                                                android:drawableStart="@drawable/email"
+                                                android:paddingStart="10dp"
+                                                android:layout_marginBottom="10dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Informations rélatives au voyage"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/numerovol"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="N° de  vol"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/vol"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/departville"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Ville de départ"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/depart"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/arriveevile"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Ville d'arrivée"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/arrivee"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/Objetvoyage"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Objet du voyage"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/objet"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/hebergement"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Hébergement"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/heberge"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/nomhotel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Nom hotel"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/hotel"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/register_button"
+                android:drawableEnd="@drawable/register"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Valider"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
